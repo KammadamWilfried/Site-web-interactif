@@ -1,0 +1,153 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f6f9;
+  color: #1f2937;
+  padding: 20px;
+}
+
+header {
+  background: linear-gradient(to right, #1e3a8a, #3b82f6);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #1e3a8a;
+}
+
+/* Sections */
+section {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Boutons compétences */
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.skill-btn {
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.skill-btn:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+/* Bloc description compétences */
+.description-block {
+  background-color: #f1f5f9;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 10px;
+  border-left: 5px solid #3b82f6;
+}
+
+#click-stats ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+#click-stats li {
+  margin-bottom: 5px;
+}
+
+/* Liens */
+a {
+  color: #1e40af;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .btn-container {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 1.2rem;
+  }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.header-text {
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-text {
+    text-align: center;
+  }
+}
